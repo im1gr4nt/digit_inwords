@@ -9,6 +9,17 @@ l = []
 #get a list of integers in number
 for i in str(num):
     l.append(int(i))
+
+
+#lists with numbers
+unit = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'zero']
+teens = ['eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+tens = ['ten', 'twenty', 'thirty', 'fourty', 'fivety', 'sixty', 'seventy', 'eighty', 'ninety']
+hund = 'hundred'
+hunds = 'hundreds'
+thou = 'thousand'
+thous = 'thousands'
+
 #number of tens
 if l[-2] == 1 and l[-1] == 1:
     tens = "eleven"
