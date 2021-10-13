@@ -54,11 +54,7 @@ def thousands():
 
 thousands()
 hundreds()
-if l[-2] == 1 and l[-1] != 0:
-    teens()
-else:
-    tens()
-
+tens()
 units()
 
 print(*inwords)
