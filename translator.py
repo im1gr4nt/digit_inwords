@@ -52,10 +52,19 @@ def thousands():
         unit = unit_l[n-1]
         inwords.append(unit + thous)
 
-thousands()
-hundreds()
-tens()
-units()
-
+if len(l) == 4:
+    thousands()
+    hundreds()
+    tens()
+    units()
+elif len(l) == 3:
+    hundreds()
+    tens()
+    units()
+elif len(l) == 2:
+    tens()
+    units()
+elif len(l) == 1:
+    units()
 print(*inwords)
 
