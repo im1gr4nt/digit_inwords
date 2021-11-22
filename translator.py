@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 
-
-
 num = input("Enter number: ")
 #list made of input digits
 l = []
@@ -16,8 +14,8 @@ for i in str(num):
 
 #lists with numbers in words
 unit_l = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'zero']
-teens_l = ['eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
-tens_l = ['ten', 'twenty', 'thirty', 'fourty', 'fivety', 'sixty', 'seventy', 'eighty', 'ninety']
+teens_l = ['zero', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
+tens_l = ['zero', 'ten', 'twenty', 'thirty', 'fourty', 'fivety', 'sixty', 'seventy', 'eighty', 'ninety']
 hunds = ' hundreds'
 thous = ' thousands'
 
@@ -29,11 +27,11 @@ def units():
 def tens():
     if l[-2] == 1 and l[-1] == 0:
         n = l[-2]
-        teen = teens_l[n-1]
+        teen = teens_l[n]
         inwords.append(teen)
     else:
         n = l[-2]
-        ten = tens_l[n-1]
+        ten = tens_l[n]
         inwords.append(ten)
 
 def hundreds():
@@ -41,7 +39,7 @@ def hundreds():
         inwords.append('one hundred')
     else:
         n = l[-3]
-        unit = unit_l[n-1]
+        unit = unit_l[n]
         inwords.append(unit + hunds)
 
 def thousands():
@@ -49,7 +47,7 @@ def thousands():
         inwords.append('one thousand')
     else:
         n = l[-4]
-        unit = unit_l[n-1]
+        unit = unit_l[n]
         inwords.append(unit + thous)
 
 if len(l) == 4:
