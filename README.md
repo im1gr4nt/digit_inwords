@@ -1,3 +1,8 @@
-# digit_inwords
-Insert a digit number and print out the number in words.
+# Digit In Words
+Translate digits to words
+Works only up to 1000
 
+## Install
+
+
+## Usage
