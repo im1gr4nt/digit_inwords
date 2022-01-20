@@ -1,8 +1,7 @@
 # Digit In Words
 Translate digits to words
 
-Works only up to 1000
-
+Still trying to figure it out
 
 ## Install
 
