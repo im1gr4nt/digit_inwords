@@ -1,7 +1,7 @@
 # Digit In Words
-Translate digits to words
+Translate numbers to words
 
-Still trying to figure it out
+
 
 ## Install
 
