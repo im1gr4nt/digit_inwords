@@ -40,8 +40,8 @@ def two():
         pass
 
 def three():
-    if l[-3] == 1 and l[-1] == 0 and l[-2] == 0:
-       print("one hundred ")
+    if l[-3] == 1 and l[-2] == 0 and l[-1] == 0: 
+       print("one hundred", end="")
     elif l[-3] == 1 and l[-2] != 0:
         inwords.append("one hundred")
     elif l[-3] != 1 and l[-3] != 0:
@@ -50,12 +50,27 @@ def three():
     else: 
         pass
 
+def four():
+    if l[-4] == 1 and l[-3] == 0 and l[-2] == 0 and l[-1] == 0:
+        print("one thousand", end="")
+    elif l[-4] == 1:
+        inwords.append("one thousand")
+    elif l[-4] != 1:
+        inwords.append(digits[l[-4]])
+        inwords.append(thousands)
+    else:
+        pass
+
 #conditional based on number length
 if len(l) == 1:
     one()
 elif len(l) == 2:
     two()
 elif len(l) == 3:
+    three()
+    two()
+elif len(l) == 4:
+    four()
     three()
     two()
 else:
