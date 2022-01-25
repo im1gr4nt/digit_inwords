@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 #list of numbers
-digits = ['zer', 'one', 'two','three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-teens = ['zer', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eigteen', 'nineteen']
-tens = ['zer', 'ten', 'twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+digits = ['zer1', 'one', 'two','three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+teens = ['zer2', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eigteen', 'nineteen']
+tens = ['zer3', 'ten', 'twenty', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
 hundreds = "hundreds"
 thousands = "thousands"
 
@@ -32,7 +32,7 @@ def two():
     elif l[-2] != 1 and l[-1] == 0:
         inwords.append(tens[l[-2]])
     elif l[-2] == 1 and l[-1] == 0:
-        inwords.append(tens[-2])
+        inwords.append(tens[l[-2]])
     elif l[-2] != 1 and l[-1] != 0:
         inwords.append(tens[l[-2]])
         inwords.append(digits[l[-1]])
@@ -41,14 +41,15 @@ def two():
 
 def three():
     if l[-3] == 1 and l[-1] == 0 and l[-2] == 0:
-       print("one hundred")
+       print("one hundred ")
     elif l[-3] == 1 and l[-2] != 0:
         inwords.append("one hundred")
-    elif l[-3] != 1:
+    elif l[-3] != 1 and l[-3] != 0:
         inwords.append(digits[l[-3]])
         inwords.append(hundreds)
     else: 
         pass
+
 #conditional based on number length
 if len(l) == 1:
     one()
